@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Secret Santa</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/static/style.css">
+	</head>
+	<body>
+		<div class="pairing-container">
+			<div class="hello">
+				<h1>
+					<!-- <span class="hello">Hello</span> -->
+					<span class="hat">
+						<img  src="/avatars/{{user.avatar}}" />
+					</span>
+					<span class="name">{{user.displayName}}</span>
+				</h1>
+			</div>
+		
+			<div class="pairee">
+				<p class="please">You are the Secret Santa for:</p>
+				<img src="/avatars/{{pairee.avatar}}" />
+				<h2 class="name">{{pairee.displayName}}</h2>
+			</div>
+
+			<div class="credits">
+				<a href="https://www.flaticon.com/free-icons/christmas-cap" title="christmas cap icons">Christmas cap icons by BabyCorn - Flaticon</a>
+			</div>
+		</div>
+	
+	</body>
+</html>

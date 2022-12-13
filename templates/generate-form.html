@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Secret Santa</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<h1>Secret Santa</h1>
+		<p>Pairings need to be generated</p>
+		
+		<ul class="users-list">
+			{{#users}}
+			<li>{{displayName}}</li>
+			{{/users}}
+		</ul>
+		{{#too_few}}
+			<p>There aren't enough people to create a secret santa list!</p>
+		{{/too_few}}
+		<form method="post" action="/generate-pairings">
+			<input type="submit" value="Generate Pairings!">
+		</form>
+	</body>
+</html>
